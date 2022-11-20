@@ -1,40 +1,12 @@
-# Modified PySlowFast (with MViT v2) for AI City Challenge
-
-## Introduction
-
-  The AI City Challenge's [Naturalistic Driving Action Recognition](https://www.aicitychallenge.org/2022-challenge-tracks/) intends to temporally localize driver actions given multi-view video streams. 
-  Our system, the Stargazer system, achieves **second-place** performance on the [public leaderboard](https://arxiv.org/pdf/2204.10380.pdf) and third-place in the [final test](https://www.aicitychallenge.org/2022-challenge-winners/). 
-  Our system is based on the [improved multi-scale vision transformers](https://arxiv.org/abs/2112.01526) and large-scale pretraining on the Kinetics-700 dataset. Our CVPR workshop paper detailing the designs is [here](https://openaccess.thecvf.com/content/CVPR2022W/AICity/papers/Liang_Stargazer_A_Transformer-Based_Driver_Action_Detection_System_for_Intelligent_Transportation_CVPRW_2022_paper.pdf).
-
-  <div align="center">
-    <div style="">
-        <img src="figures/aicity_figure1.png" height="300px" />
-        <img src="figures/leaderboard_042022.png" height="300px" />
-    </div>
-  </div>
-
-## Citations
-If you find this code useful in your research then please cite
-
-```
-@inproceedings{liang2022stargazer,
-  title={Stargazer: A transformer-based driver action detection system for intelligent transportation},
-  author={Liang, Junwei and Zhu, He and Zhang, Enwei and Zhang, Jun},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={3160--3167},
-  year={2022}
-}
-```
-
 ## Requirement
   + ffmpeg >= 3.4 for cutting the videos into clips for training.
+ 
   + python 3.8, tqdm, decord, opencv, pyav, pytorch>=1.9.0, fairscale
 
 ## Data Preparation
-  1. Put all videos into a single path under `data/A1_A2_videos/`. There should be 60 ".MP4" under this directory
-  2. Download our processed annotations from [here](https://drive.google.com/file/d/1-Xj0HsYJqsA_mdrTBUijp4GHSr8Zrin6/view?usp=sharing). This annotation simply re-formats the original annotation. Put the file under `data/annotations/`
-
-  3. Generate files for training on A1 videos.
+  1. Put all videos A1,A2 into a single path under `data/A1_A2_videos/`. There should be 60 ".MP4" under this directory
+  
+  2. Generate files for training on A1 videos.
 
      + Get the processed annotations and video cutting cmds
 
@@ -70,8 +42,7 @@ If you find this code useful in your research then please cite
 
        ```
        $ mkdir data/annotations/pyslowfast_anno_na0/full
-       $ cat data/annotations/pyslowfast_anno_na0/splits_1/train.csv \
-       data/annotations/pyslowfast_anno_na0/splits_1/val.csv \
+       $ cat data/annotations/pyslowfast_anno_na0/splits_1/train.csv data/annotations/pyslowfast_anno_na0/splits_2/train.csv
        > data/annotations/pyslowfast_anno_na0/full/train.csv
        $ cp data/annotations/pyslowfast_anno_na0/splits_1/val.csv \
        data/annotations/pyslowfast_anno_na0/full/
