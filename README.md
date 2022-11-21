@@ -86,7 +86,8 @@
                     <li>17</li>
                   </ul>
                   </details>
-                <li>camView2</li>
+                  <details>
+                  <summary>camView2</summary>
                   <ul>
                     <li>0.csv</li>
                     <li>1.csv</li>
@@ -101,7 +102,9 @@
                     <li>16</li>
                     <li>17</li>
                   </ul>
-                <li>camView3</li>
+                  </details>
+                  <details>
+                  <summary>camView3</summary>
                   <ul>
                     <li>0.csv</li>
                     <li>1.csv</li>
@@ -116,10 +119,12 @@
                     <li>16</li>
                     <li>17</li>
                   </ul>
+                  </details>
               </ul>
             <li>val</li>
               <ul>
-                <li>camView1</li>
+                  <details>
+                  <summary>camView1</summary>
                   <ul>
                     <li>0.csv</li>
                     <li>1.csv</li>
@@ -134,7 +139,9 @@
                     <li>16</li>
                     <li>17</li>
                   </ul>
-                <li>camView2</li>
+                  </details>
+                  <details>
+                  <summary>camView2</summary>
                   <ul>
                     <li>0.csv</li>
                     <li>1.csv</li>
@@ -149,7 +156,9 @@
                     <li>16</li>
                     <li>17</li>
                   </ul>
-                <li>camView3</li>
+                  </details>
+                  <details>
+                  <summary>camView3</summary>
                   <ul>
                     <li>0.csv</li>
                     <li>1.csv</li>
@@ -164,6 +173,7 @@
                     <li>16</li>
                     <li>17</li>
                   </ul>
+                  </details>
               </ul>
           </ul>  
       </ul>  
