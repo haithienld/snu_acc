@@ -69,8 +69,8 @@
             <li>val.csv</li>
             <li>train</li>
               <ul>
-                <li>camView1</li>
                   <details>
+                  <summary>camView1</summary>
                   <ul>
                     <li>0.csv</li>
                     <li>1.csv</li>
