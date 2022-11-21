@@ -1,3 +1,5 @@
 models/*
 data/A1_clips
 data/A1_A2_videos
+data/annotations/train
+data/annotations/val
