@@ -70,6 +70,7 @@
             <li>train</li>
               <ul>
                 <li>camView1</li>
+                  <details>
                   <ul>
                     <li>0.csv</li>
                     <li>1.csv</li>
@@ -84,6 +85,7 @@
                     <li>16</li>
                     <li>17</li>
                   </ul>
+                  </details>
                 <li>camView2</li>
                   <ul>
                     <li>0.csv</li>
