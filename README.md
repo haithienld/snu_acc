@@ -27,10 +27,10 @@
      + Remove unlabeled video segment (without empty segments) Remove row has value -1 or -2 in the processed_anno_original.csv file
      
        ```
-       $ python scripts/aicity_split_anno.py data/annotations/processed_anno_original.csv \
-       data/annotations/pyslowfast_anno_na0 --method 1
+       $ jupyter notebook # Running data/dataprocessing.ipynb
        ```
-
+       
+       
      + Make annotation splits (with empty segments)
 
        ```
@@ -38,8 +38,6 @@
        data/annotations/pyslowfast_anno_naempty0 --method 2
        ```
 
-     + fsdf
-      
      + Make annotation files for training on the whole A1 set
 
        ```
@@ -63,9 +61,6 @@
           <ul>
             <li>annotation_A1.edited.csv</li>
             <li>processed_anno_original.csv</li>
-            <li>train.csv</li>
-            <li>val.csv</li>
-            <li>train</li>
               <ul>
                   <details>
                   <summary>camView1</summary>
