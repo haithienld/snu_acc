@@ -51,9 +51,14 @@
        ```
   3. Datasets 
 ## collapsible markdown?
- * [tree-md](./tree-md)
- * [dir2](./dir2)
-   * [file21.ext](./dir2/file21.ext)
+ * [data](./data)
+  * [A1_A2_videos(Original Video Files)](./data/A1_A2_videos)
+  * [A1_clips(Cutted-clips from running the command parallel -j 4 < A1_cut.sh)](./data/A1_clips)
+  * [annotations](./data/annotations)
+   * [annotation_A1.edited.csv](./data/annotations/annotation_A1.edited.csv) 
+   * [processed_anno_original.csv](./data/annotations/processed_anno_original.csv) 
+   * [train.csv](./data/annotations/train.csv) 
+   * [val.csv](./data/annotations/v.csv) 
    * [file22.ext](./dir2/file22.ext)
    * [file23.ext](./dir2/file23.ext)
  * [dir1](./dir1)
