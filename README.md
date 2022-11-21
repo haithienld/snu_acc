@@ -42,12 +42,15 @@
 
        ```
        $ mkdir data/annotations/pyslowfast_anno_na0/full
-       $ cat data/annotations/pyslowfast_anno_na0/splits_1/train.csv data/annotations/pyslowfast_anno_na0/splits_2/train.csv
-       > data/annotations/pyslowfast_anno_na0/full/train.csv
-       $ cp data/annotations/pyslowfast_anno_na0/splits_1/val.csv \
-       data/annotations/pyslowfast_anno_na0/full/
+       $ cd data/annotations/pyslowfast_anno_na0
+       $ cat splits_1/train.csv splits_2/train.csv splits_3/train.csv splits_4/train.csv splits_5/train.csv > full/train.csv
+       $ cat splits_1/val.csv splits_2/val.csv splits_3/val.csv splits_4/val.csv splits_5/val.csv > full/val.csv
+       $ cd../
+       $ mv pyslowfast_anno_na0/full/train.csv train.csv
+       $ mv pyslowfast_anno_na0/full/val.csv val.csv
        ```
-
+    3. Move c
+       
      + download pre-trained K700 checkpoints from [here](https://drive.google.com/file/d/1wn1392Kn6CFxcSH6lJpqZky9-PJxqTlY/view?usp=sharing). Put the `k700_train_mvitV2_full_16x4_fromscratch_e200_448.pyth` under `models/`. This model achieves 71.91 top-1 accuracy on Kinetics700 validation sets.
 
 ## Training
