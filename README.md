@@ -54,7 +54,13 @@
   
   
      + download pre-trained K700 checkpoints from [here](https://drive.google.com/file/d/1wn1392Kn6CFxcSH6lJpqZky9-PJxqTlY/view?usp=sharing). Put the `k700_train_mvitV2_full_16x4_fromscratch_e200_448.pyth` under `models/`. This model achieves 71.91 top-1 accuracy on Kinetics700 validation sets.
-
+## Datasets 
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+</ul>  
 ## Training
   Train using the 16x4, 448 crop K700 pretrained model on A1 videos for 200 epochs, as in the paper.
   Here we test it with a machine with 3-GPUs (11GB memory per GPU). The code base supports multi-machine training as well.
