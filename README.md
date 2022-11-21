@@ -24,8 +24,8 @@
        $ parallel -j 4 < A1_cut.sh
        ```
 
-     + Make annotation splits (without empty segments, see paper for details)
-
+     + Remove unlabeled video segment (without empty segments) Remove row has value -1 or -2 in the processed_anno_original.csv file
+     
        ```
        $ python scripts/aicity_split_anno.py data/annotations/processed_anno_original.csv \
        data/annotations/pyslowfast_anno_na0 --method 1
