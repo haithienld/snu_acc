@@ -39,133 +39,7 @@
        ```
 
      + fsdf
-      <details><summary>snu_acc</summary>
-      <ul>
-        <li>data</li>
-            <ul>
-              <li>A1_A2_videos(Original Video Files)</li>
-              <li>A1_clips(Cutted-clips from running the command parallel -j 4 < A1_cut.sh)</li>
-              <li>annotations</li>
-                <ul>
-                  <li>annotation_A1.edited.csv</li>
-                  <li>processed_anno_original.csv</li>
-                  <li>train.csv</li>
-                  <li>val.csv</li>
-                  <li>train</li>
-                    <ul>
-                        <details>
-                        <summary>camView1</summary>
-                        <ul>
-                          <li>0.csv</li>
-                          <li>1.csv</li>
-                          <li>2.csv</li>
-                          <li>...</li>
-                          <li>16.csv</li>
-                          <li>17.csv</li>
-                          <li>0</li>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>...</li>
-                          <li>16</li>
-                          <li>17</li>
-                        </ul>
-                        </details>
-                        <details>
-                        <summary>camView2</summary>
-                        <ul>
-                          <li>0.csv</li>
-                          <li>1.csv</li>
-                          <li>2.csv</li>
-                          <li>...</li>
-                          <li>16.csv</li>
-                          <li>17.csv</li>
-                          <li>0</li>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>...</li>
-                          <li>16</li>
-                          <li>17</li>
-                        </ul>
-                        </details>
-                        <details>
-                        <summary>camView3</summary>
-                        <ul>
-                          <li>0.csv</li>
-                          <li>1.csv</li>
-                          <li>2.csv</li>
-                          <li>...</li>
-                          <li>16.csv</li>
-                          <li>17.csv</li>
-                          <li>0</li>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>...</li>
-                          <li>16</li>
-                          <li>17</li>
-                        </ul>
-                        </details>
-                    </ul>
-                  <li>val</li>
-                    <ul>
-                        <details>
-                        <summary>camView1</summary>
-                        <ul>
-                          <li>0.csv</li>
-                          <li>1.csv</li>
-                          <li>2.csv</li>
-                          <li>...</li>
-                          <li>16.csv</li>
-                          <li>17.csv</li>
-                          <li>0</li>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>...</li>
-                          <li>16</li>
-                          <li>17</li>
-                        </ul>
-                        </details>
-                        <details>
-                        <summary>camView2</summary>
-                        <ul>
-                          <li>0.csv</li>
-                          <li>1.csv</li>
-                          <li>2.csv</li>
-                          <li>...</li>
-                          <li>16.csv</li>
-                          <li>17.csv</li>
-                          <li>0</li>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>...</li>
-                          <li>16</li>
-                          <li>17</li>
-                        </ul>
-                        </details>
-                        <details>
-                        <summary>camView3</summary>
-                        <ul>
-                          <li>0.csv</li>
-                          <li>1.csv</li>
-                          <li>2.csv</li>
-                          <li>...</li>
-                          <li>16.csv</li>
-                          <li>17.csv</li>
-                          <li>0</li>
-                          <li>1</li>
-                          <li>2</li>
-                          <li>...</li>
-                          <li>16</li>
-                          <li>17</li>
-                        </ul>
-                        </details>
-                    </ul>
-                </ul>  
-            </ul>  
-        <li>Second item</li>
-        <li>Third item</li>
-        <li>Fourth item</li>
-      </ul>  
-      </details>
+      
      + Make annotation files for training on the whole A1 set
 
        ```
@@ -178,11 +52,137 @@
        $ mv pyslowfast_anno_na0/full/val.csv val.csv
        ```
                                                                  
-    
+## The folder structure 
+<details><summary>snu_acc</summary>
+<ul>
+  <li>data</li>
+      <ul>
+        <li>A1_A2_videos(Original Video Files)</li>
+        <li>A1_clips(Cutted-clips from running the command parallel -j 4 < A1_cut.sh)</li>
+        <li>annotations</li>
+          <ul>
+            <li>annotation_A1.edited.csv</li>
+            <li>processed_anno_original.csv</li>
+            <li>train.csv</li>
+            <li>val.csv</li>
+            <li>train</li>
+              <ul>
+                  <details>
+                  <summary>camView1</summary>
+                  <ul>
+                    <li>0.csv</li>
+                    <li>1.csv</li>
+                    <li>2.csv</li>
+                    <li>...</li>
+                    <li>16.csv</li>
+                    <li>17.csv</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>...</li>
+                    <li>16</li>
+                    <li>17</li>
+                  </ul>
+                  </details>
+                  <details>
+                  <summary>camView2</summary>
+                  <ul>
+                    <li>0.csv</li>
+                    <li>1.csv</li>
+                    <li>2.csv</li>
+                    <li>...</li>
+                    <li>16.csv</li>
+                    <li>17.csv</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>...</li>
+                    <li>16</li>
+                    <li>17</li>
+                  </ul>
+                  </details>
+                  <details>
+                  <summary>camView3</summary>
+                  <ul>
+                    <li>0.csv</li>
+                    <li>1.csv</li>
+                    <li>2.csv</li>
+                    <li>...</li>
+                    <li>16.csv</li>
+                    <li>17.csv</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>...</li>
+                    <li>16</li>
+                    <li>17</li>
+                  </ul>
+                  </details>
+              </ul>
+            <li>val</li>
+              <ul>
+                  <details>
+                  <summary>camView1</summary>
+                  <ul>
+                    <li>0.csv</li>
+                    <li>1.csv</li>
+                    <li>2.csv</li>
+                    <li>...</li>
+                    <li>16.csv</li>
+                    <li>17.csv</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>...</li>
+                    <li>16</li>
+                    <li>17</li>
+                  </ul>
+                  </details>
+                  <details>
+                  <summary>camView2</summary>
+                  <ul>
+                    <li>0.csv</li>
+                    <li>1.csv</li>
+                    <li>2.csv</li>
+                    <li>...</li>
+                    <li>16.csv</li>
+                    <li>17.csv</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>...</li>
+                    <li>16</li>
+                    <li>17</li>
+                  </ul>
+                  </details>
+                  <details>
+                  <summary>camView3</summary>
+                  <ul>
+                    <li>0.csv</li>
+                    <li>1.csv</li>
+                    <li>2.csv</li>
+                    <li>...</li>
+                    <li>16.csv</li>
+                    <li>17.csv</li>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>...</li>
+                    <li>16</li>
+                    <li>17</li>
+                  </ul>
+                  </details>
+              </ul>
+          </ul>  
+      </ul>  
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+</ul>  
+</details>    
   
   
      + download pre-trained K700 checkpoints from [here](https://drive.google.com/file/d/1wn1392Kn6CFxcSH6lJpqZky9-PJxqTlY/view?usp=sharing). Put the `k700_train_mvitV2_full_16x4_fromscratch_e200_448.pyth` under `models/`. This model achieves 71.91 top-1 accuracy on Kinetics700 validation sets.
-## The folder structure 
 
 
 ## Training
