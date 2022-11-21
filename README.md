@@ -50,38 +50,110 @@
        $ mv pyslowfast_anno_na0/full/val.csv val.csv
        ```
   3. Datasets 
-  + The folder structure
+  + <details><summary>The folder structure</summary>
     ```
     /xxxx
       ├──snu_acc
         ├── data
         │   ├── A1_A2_videos (Original Video Files)
-        │   ├── A1_clips ( Cutted-clips from running the command 
+        │   ├── A1_clips ( Cutted-clips from running the command parallel -j 4 < A1_cut.sh )
         │   ├── annotations
-        ├── bottle_detect
-        ├── cellphone_detect
-        ├── data
-        │   ├── VIDEO1
-        │   │   ├── frame000000.jpg
-        │   │   ├── frame000001.jpg
-        │   │   ├── ...
-        │   ├── VIDEO2
-        │   │   ├── frame000000.jpg
-        │   │   ├── frame000001.jpg
-        │   │   ├── ...
-        │   ├── ...
-        ├── data_detect
-        │   ├── VIDEO1
-        │   │   ├── bbox_reuslts.txt
-        │   │   ├── frame000000.jpg
-        │   │   ├── frame000001.jpg
-        │   │   ├── ...
-        │   ├── VIDEO2
-        │   │   ├── bbox_reuslts.txt
-        │   │   ├── frame000000.jpg
-        │   │   ├── frame000001.jpg
-        │   │   ├── ...
-        │   ├── ...
+        │   │   ├── annotation_A1.edited.csv
+        │   │   ├── processed_anno_original.csv
+        │   │   ├── train.csv
+        │   │   ├── val.csv
+        │   │   ├── train
+        │   │   │   ├── camView1
+        │   │   │   │   ├── 0.csv
+        │   │   │   │   ├── 1.csv
+        │   │   │   │   ├── 2.csv
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15.csv
+        │   │   │   │   ├── 16.csv
+        │   │   │   │   ├── 17.csv
+        │   │   │   │   ├── 0
+        │   │   │   │   ├── 1
+        │   │   │   │   ├── 2
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15
+        │   │   │   │   ├── 16
+        │   │   │   │   ├── 17
+        │   │   │   ├── camView2
+        │   │   │   │   ├── 0.csv
+        │   │   │   │   ├── 1.csv
+        │   │   │   │   ├── 2.csv
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15.csv
+        │   │   │   │   ├── 16.csv
+        │   │   │   │   ├── 17.csv
+        │   │   │   │   ├── 0
+        │   │   │   │   ├── 1
+        │   │   │   │   ├── 2
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15
+        │   │   │   │   ├── 16
+        │   │   │   │   ├── 17
+        │   │   │   ├── camView3
+        │   │   │   │   ├── 0.csv
+        │   │   │   │   ├── 1.csv
+        │   │   │   │   ├── 2.csv
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15.csv
+        │   │   │   │   ├── 16.csv
+        │   │   │   │   ├── 17.csv
+        │   │   │   │   ├── 0
+        │   │   │   │   ├── 1
+        │   │   │   │   ├── 2
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15
+        │   │   │   │   ├── 16
+        │   │   │   │   ├── 17
+        │   │   ├── val
+        │   │   │   ├── camView1
+        │   │   │   │   ├── 0.csv
+        │   │   │   │   ├── 1.csv
+        │   │   │   │   ├── 2.csv
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15.csv
+        │   │   │   │   ├── 16.csv
+        │   │   │   │   ├── 17.csv
+        │   │   │   │   ├── 0
+        │   │   │   │   ├── 1
+        │   │   │   │   ├── 2
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15
+        │   │   │   │   ├── 16
+        │   │   │   │   ├── 17
+        │   │   │   ├── camView2
+        │   │   │   │   ├── 0.csv
+        │   │   │   │   ├── 1.csv
+        │   │   │   │   ├── 2.csv
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15.csv
+        │   │   │   │   ├── 16.csv
+        │   │   │   │   ├── 17.csv
+        │   │   │   │   ├── 0
+        │   │   │   │   ├── 1
+        │   │   │   │   ├── 2
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15
+        │   │   │   │   ├── 16
+        │   │   │   │   ├── 17
+        │   │   │   ├── camView3
+        │   │   │   │   ├── 0.csv
+        │   │   │   │   ├── 1.csv
+        │   │   │   │   ├── 2.csv
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15.csv
+        │   │   │   │   ├── 16.csv
+        │   │   │   │   ├── 17.csv
+        │   │   │   │   ├── 0
+        │   │   │   │   ├── 1
+        │   │   │   │   ├── 2
+        │   │   │   │   ├── ...
+        │   │   │   │   ├── 15
+        │   │   │   │   ├── 16
+        │   │   │   │   ├── 17
         ├── labels
         ├── pose
         ├── videos
@@ -91,8 +163,8 @@
         │   │   ├── ...
         │   ├── ...
         ├── video_ids.csv
-    ```
-  
+    ```                                                                                     
+    </detail>
      + download pre-trained K700 checkpoints from [here](https://drive.google.com/file/d/1wn1392Kn6CFxcSH6lJpqZky9-PJxqTlY/view?usp=sharing). Put the `k700_train_mvitV2_full_16x4_fromscratch_e200_448.pyth` under `models/`. This model achieves 71.91 top-1 accuracy on Kinetics700 validation sets.
 
 ## Training
