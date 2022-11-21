@@ -54,21 +54,27 @@
   
   
      + download pre-trained K700 checkpoints from [here](https://drive.google.com/file/d/1wn1392Kn6CFxcSH6lJpqZky9-PJxqTlY/view?usp=sharing). Put the `k700_train_mvitV2_full_16x4_fromscratch_e200_448.pyth` under `models/`. This model achieves 71.91 top-1 accuracy on Kinetics700 validation sets.
-## Datasets 
-<details><summary>The folder structure</summary>
+## The folder structure 
+<details><summary>snu_acc</summary>
 <ul>
-  <li>First item</li>
+  <li>data</li>
       <ul>
-        <li>First item</li>
+        <li>A1_A2_videos(Original Video Files)</li>
+        <li>A1_clips(Cutted-clips from running the command parallel -j 4 < A1_cut.sh)</li>
+        <li>annotations</li>
           <ul>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-            <li>Fourth item</li>
+            <li>annotation_A1.edited.csv</li>
+            <li>processed_anno_original.csv</li>
+            <li>train.csv</li>
+            <li>val.csv</li>
+            <li>train</li>
+              <ul>
+                <li>camView1</li>
+                <li>camView2</li>
+                <li>camView3</li>
+              </ul>
+            <li>val</li>
           </ul>  
-        <li>Second item</li>
-        <li>Third item</li>
-        <li>Fourth item</li>
       </ul>  
   <li>Second item</li>
   <li>Third item</li>
