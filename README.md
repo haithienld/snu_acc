@@ -11,7 +11,7 @@
      + Get the processed annotations and video cutting cmds
 
        ```
-       $ python scripts/aicity_convert_anno.py data/annotations/annotation_A1.edited.csv \
+       $ python data/aicity_convert_anno.py data/annotations/annotation_A1.edited.csv \
        data/A1_A2_videos/ data/annotations/processed_anno_original.csv \
        A1_cut.sh data/A1_clips/ --resolution=-2:540
        ```
