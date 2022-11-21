@@ -49,6 +49,49 @@
        $ mv pyslowfast_anno_na0/full/train.csv train.csv
        $ mv pyslowfast_anno_na0/full/val.csv val.csv
        ```
+  3. Datasets 
+  + The folder structure
+    ```
+    /xxxx
+      ├──snu_acc
+        ├── data
+        │   ├── A1_A2_videos (Original Video Files)
+        │   ├── A1_clips ( Cutted-clips from running the command 
+        │   ├── annotations
+        ├── bottle_detect
+        ├── cellphone_detect
+        ├── data
+        │   ├── VIDEO1
+        │   │   ├── frame000000.jpg
+        │   │   ├── frame000001.jpg
+        │   │   ├── ...
+        │   ├── VIDEO2
+        │   │   ├── frame000000.jpg
+        │   │   ├── frame000001.jpg
+        │   │   ├── ...
+        │   ├── ...
+        ├── data_detect
+        │   ├── VIDEO1
+        │   │   ├── bbox_reuslts.txt
+        │   │   ├── frame000000.jpg
+        │   │   ├── frame000001.jpg
+        │   │   ├── ...
+        │   ├── VIDEO2
+        │   │   ├── bbox_reuslts.txt
+        │   │   ├── frame000000.jpg
+        │   │   ├── frame000001.jpg
+        │   │   ├── ...
+        │   ├── ...
+        ├── labels
+        ├── pose
+        ├── videos
+        │   ├── user_id_xxx
+        │   │   ├── VIDEO1.MP4
+        │   │   ├── VIDEO2.MP4
+        │   │   ├── ...
+        │   ├── ...
+        ├── video_ids.csv
+    ```
   
      + download pre-trained K700 checkpoints from [here](https://drive.google.com/file/d/1wn1392Kn6CFxcSH6lJpqZky9-PJxqTlY/view?usp=sharing). Put the `k700_train_mvitV2_full_16x4_fromscratch_e200_448.pyth` under `models/`. This model achieves 71.91 top-1 accuracy on Kinetics700 validation sets.
 
