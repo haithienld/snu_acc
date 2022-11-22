@@ -1,3 +1,16 @@
+## Remove old cuda install cuda 11.7
+Remove existing CuDA versions
+```
+sudo apt --purge remove "cublas*" "cuda*"
+sudo apt --purge remove "nvidia*"
+rm -rf /usr/local/cuda*
+sudo apt-get autoremove && sudo apt-get autoclean
+```
+Reboot to remove cached files 
+```
+reboot
+```
+
 ## Requirement
   + ffmpeg >= 3.4 for cutting the videos into clips for training.
  
