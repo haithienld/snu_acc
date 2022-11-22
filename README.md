@@ -61,15 +61,9 @@
           <ul>
             <li>annotation_A1.edited.csv</li>
             <li>processed_anno_original.csv</li>
-            <details>
-            <summary>camView1</summary>
+          </ul>
+        <li>datasets</li>
             <ul>
-              <li>0.csv</li>
-              <li>1.csv</li>
-              <li>2.csv</li>
-              <li>...</li>
-              <li>16.csv</li>
-              <li>17.csv</li>
               <li>0</li>
               <li>1</li>
               <li>2</li>
@@ -77,44 +71,7 @@
               <li>16</li>
               <li>17</li>
             </ul>
-            </details>
-            <details>
-            <summary>camView2</summary>
-            <ul>
-              <li>0.csv</li>
-              <li>1.csv</li>
-              <li>2.csv</li>
-              <li>...</li>
-              <li>16.csv</li>
-              <li>17.csv</li>
-              <li>0</li>
-              <li>1</li>
-              <li>2</li>
-              <li>...</li>
-              <li>16</li>
-              <li>17</li>
-            </ul>
-            </details>
-            <details>
-            <summary>camView3</summary>
-            <ul>
-              <li>0.csv</li>
-              <li>1.csv</li>
-              <li>2.csv</li>
-              <li>...</li>
-              <li>16.csv</li>
-              <li>17.csv</li>
-              <li>0</li>
-              <li>1</li>
-              <li>2</li>
-              <li>...</li>
-              <li>16</li>
-              <li>17</li>
-            </ul>
-            </details>
-        </ul> 
       </ul>
-  </
   <li>Second item</li>
   <li>Third item</li>
   <li>Fourth item</li>
