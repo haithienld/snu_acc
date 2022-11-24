@@ -68,13 +68,13 @@ sudo ldconfig
 
 #### install cuDNN v11.7
 
-[Download libcudnn8-dev_8.5.0.96-1+cuda11.7_amd64.deb and libcudnn8_8.5.0.96-1+cuda11.7_amd64.deb]{https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/}
+[Download libcudnn8-dev_8.5.0.96-1+cuda11.7_amd64.deb and libcudnn8_8.5.0.96-1+cuda11.7_amd64.deb](https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/)
 ```
 wget ....
 sudo dpkg -i libcudnn8-dev_8.5.0.96-1+cuda11.7_amd64.deb
 sudo dpkg -i libcudnn8_8.5.0.96-1+cuda11.7_amd64.deb
 ```
-https://medium.com/geekculture/installing-cudnn-and-cuda-toolkit-on-ubuntu-20-04-for-machine-learning-tasks-f41985fcf9b2
+[inference link](https://medium.com/geekculture/installing-cudnn-and-cuda-toolkit-on-ubuntu-20-04-for-machine-learning-tasks-f41985fcf9b2)
 
 #### Finally, to verify the installation, check
 ```
