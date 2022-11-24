@@ -1,3 +1,16 @@
+## Remove old cuda install cuda 11.7
+Remove existing CuDA versions
+```
+sudo apt --purge remove "cublas*" "cuda*"
+sudo apt --purge remove "nvidia*"
+rm -rf /usr/local/cuda*
+sudo apt-get autoremove && sudo apt-get autoclean
+```
+Reboot to remove cached files 
+```
+reboot
+```
+
 ## Requirement
   + ffmpeg >= 3.4 for cutting the videos into clips for training.
  
@@ -11,7 +24,7 @@
      + Get the processed annotations and video cutting cmds
 
        ```
-       $ python scripts/aicity_convert_anno.py data/annotations/annotation_A1.edited.csv \
+       $ python data/aicity_convert_anno.py data/annotations/annotation_A1.edited.csv \
        data/A1_A2_videos/ data/annotations/processed_anno_original.csv \
        A1_cut.sh data/A1_clips/ --resolution=-2:540
        ```
@@ -24,13 +37,13 @@
        $ parallel -j 4 < A1_cut.sh
        ```
 
-     + Make annotation splits (without empty segments, see paper for details)
-
+     + Remove unlabeled video segment (without empty segments) Remove row has value -1 or -2 in the processed_anno_original.csv file
+     
        ```
-       $ python scripts/aicity_split_anno.py data/annotations/processed_anno_original.csv \
-       data/annotations/pyslowfast_anno_na0 --method 1
+       $ jupyter notebook # Running data/dataprocessing.ipynb
        ```
-
+       
+       
      + Make annotation splits (with empty segments)
 
        ```
@@ -38,8 +51,6 @@
        data/annotations/pyslowfast_anno_naempty0 --method 2
        ```
 
-     + fsdf
-      
      + Make annotation files for training on the whole A1 set
 
        ```
@@ -63,118 +74,17 @@
           <ul>
             <li>annotation_A1.edited.csv</li>
             <li>processed_anno_original.csv</li>
-            <li>train.csv</li>
-            <li>val.csv</li>
-            <li>train</li>
-              <ul>
-                  <details>
-                  <summary>camView1</summary>
-                  <ul>
-                    <li>0.csv</li>
-                    <li>1.csv</li>
-                    <li>2.csv</li>
-                    <li>...</li>
-                    <li>16.csv</li>
-                    <li>17.csv</li>
-                    <li>0</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>...</li>
-                    <li>16</li>
-                    <li>17</li>
-                  </ul>
-                  </details>
-                  <details>
-                  <summary>camView2</summary>
-                  <ul>
-                    <li>0.csv</li>
-                    <li>1.csv</li>
-                    <li>2.csv</li>
-                    <li>...</li>
-                    <li>16.csv</li>
-                    <li>17.csv</li>
-                    <li>0</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>...</li>
-                    <li>16</li>
-                    <li>17</li>
-                  </ul>
-                  </details>
-                  <details>
-                  <summary>camView3</summary>
-                  <ul>
-                    <li>0.csv</li>
-                    <li>1.csv</li>
-                    <li>2.csv</li>
-                    <li>...</li>
-                    <li>16.csv</li>
-                    <li>17.csv</li>
-                    <li>0</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>...</li>
-                    <li>16</li>
-                    <li>17</li>
-                  </ul>
-                  </details>
-              </ul>
-            <li>val</li>
-              <ul>
-                  <details>
-                  <summary>camView1</summary>
-                  <ul>
-                    <li>0.csv</li>
-                    <li>1.csv</li>
-                    <li>2.csv</li>
-                    <li>...</li>
-                    <li>16.csv</li>
-                    <li>17.csv</li>
-                    <li>0</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>...</li>
-                    <li>16</li>
-                    <li>17</li>
-                  </ul>
-                  </details>
-                  <details>
-                  <summary>camView2</summary>
-                  <ul>
-                    <li>0.csv</li>
-                    <li>1.csv</li>
-                    <li>2.csv</li>
-                    <li>...</li>
-                    <li>16.csv</li>
-                    <li>17.csv</li>
-                    <li>0</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>...</li>
-                    <li>16</li>
-                    <li>17</li>
-                  </ul>
-                  </details>
-                  <details>
-                  <summary>camView3</summary>
-                  <ul>
-                    <li>0.csv</li>
-                    <li>1.csv</li>
-                    <li>2.csv</li>
-                    <li>...</li>
-                    <li>16.csv</li>
-                    <li>17.csv</li>
-                    <li>0</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>...</li>
-                    <li>16</li>
-                    <li>17</li>
-                  </ul>
-                  </details>
-              </ul>
-          </ul>  
-      </ul>  
+          </ul>
+        <li>datasets</li>
+            <ul>
+              <li>0</li>
+              <li>1</li>
+              <li>2</li>
+              <li>...</li>
+              <li>16</li>
+              <li>17</li>
+            </ul>
+      </ul>
   <li>Second item</li>
   <li>Third item</li>
   <li>Fourth item</li>
