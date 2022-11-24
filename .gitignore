@@ -1,5 +1,8 @@
 models/*
-data/A1_clips
-data/A1_A2_videos
-data/annotations/train
-data/annotations/val
+A1_clips/*
+A1_A2_videos/*
+annotations/*
+annotations/train
+annotations/val
+datasets/*
+2022AICityChallenge-Track3/*
