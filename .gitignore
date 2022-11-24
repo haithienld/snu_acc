@@ -5,5 +5,6 @@ annotations/*
 annotations/train
 annotations/val
 datasets/*
-2022AICityChallenge-Track3/*
-2022AICityChallenge-Track3/
+X3D_inference/A2
+X3D_inference/checkpoint_submit
+X3D_inference/x3d_l.pyth
